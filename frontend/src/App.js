@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     getName();
-  });
+  }, []);
 
   const getName = async () => {
     const res = await axios.get('/names');
